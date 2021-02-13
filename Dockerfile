@@ -21,7 +21,7 @@ COPY /srcs/start.sh .
 COPY /srcs/mariadb-server/start.sql ./mariadb/
 COPY /srcs/nginx/lhawick /etc/nginx/sites-available/
 COPY /srcs/wp/wp-config.php /var/www/html/wordpress/wp-config.php
-#COPY /srcs/nginx/index.php /var/www/html/
+COPY /srcs/change_ai.sh .
 
 RUN chmod ugo+x start.sh
 
